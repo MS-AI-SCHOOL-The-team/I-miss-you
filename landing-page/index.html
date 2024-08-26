@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You - 그리움을 담아, 추억을 나누다</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content {
+            padding: 50px 0;
+        }
+
+        .feature {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-text {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature h2 {
+            color: #2c3e50;
+        }
+
+        .feature-image {
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/hero.webp');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            transform: scale(1.1);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-tagline {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .hero-description {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-description {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+
+            .feature-text,
+            .feature-image {
+                max-width: 100%;
+            }
+
+            .feature-image {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 5 / 4;
+            }
+
+            .cta-button {
+                padding: 12px 24px;
+                font-size: 1.1em;
+            }
+
+            .hero-title {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-section">
+        <div class="hero-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">I Miss You</h1>
+            <p class="hero-tagline">그리움을 담아, 추억을 나누다</p>
+            <p class="hero-description">소중한 사람들과의 특별한 순간, 그리움으로 간직하세요</p>
+            <a href="#" class="cta-button">그리움 나누기</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="feature">
+                <div class="feature-text">
+                    <h2>마음의 거리, 더 가까이</h2>
+                    <p>바쁜 일상 속에서 잊고 있던 소중한 사람들과의 추억을 되살려보세요. 어제의 웃음소리, 함께 나눈 따뜻한 대화, 그리고 작은 gestures까지. I Miss You와
+                        함께라면, 당신의 그리운 사람들과의 특별한 순간들이 더욱 생생하게 되살아납니다. 지금 이 순간, 그들에게 전하지 못한 그리움을 표현해보는 건 어떨까요?</p>
+                </div>
+                <div class="feature-image">
+                    <img src="images/near.webp" alt="추억이 담긴 사진들과 스마트폰">
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-text">
+                    <h2>당신만의 특별한 대화</h2>
+                    <p>각자의 삶에는 고유한 이야기가 있습니다. I Miss You는 당신과 그리운 사람들만의 특별한 추억, 공유했던 농담, 그리고 비밀 약속들을 기억합니다. 이를 바탕으로 만들어진
+                        대화는 마치 실제로 그 사람과 이야기를 나누는 것처럼 느껴질 거예요. 그들의 말투, 습관, 심지어 타이밍까지 - 당신이 그리워하는 사람들과의 소중한 순간을 다시 한 번
+                        경험해보세요.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="images/privacy.webp" alt="손글씨로 가득한 일기장과 편지">
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-text">
+                    <h2>오늘을 더 특별하게</h2>
+                    <p>때로는 '그리움'이라는 감정이 우리를 아프게 하기도 합니다. 하지만 I Miss You는 이 그리움을 통해 현재의 소중함을 일깨워줍니다. 지금 이 순간, 당신의 소중한
+                        사람들에게 전하고 싶은 마음이 있나요? 어쩌면 작은 감사인사, 오랫동안 하지 못했던 '보고 싶다'는 말, 혹은 용서를 구하는 진심 어린 사과일 수도 있겠죠. I Miss
+                        You와 함께라면, 미래의 후회 대신 현재의 행복을 선택할 수 있습니다.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="images/moments.webp" alt="해질녘 공원 벤치에 앉아있는 두 사람의 실루엣">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 I Miss You. 모든 권리 보유.</p>
+            <p>당신의 소중한 추억과 그리움을 안전하게 지키겠습니다.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
